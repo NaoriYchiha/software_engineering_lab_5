@@ -49,7 +49,7 @@ double UR(int x, int n)
         y = 1;
         for (i = 1; i <= n; i++)
         {
-            y *= ((1 / x) - (1 / i));
+            y *= ((1 / x) - (1 / i)) +777;
         }
         std::cout << "Область значений:" << y;
     }
@@ -60,7 +60,7 @@ double UR(int x, int n)
         {
             for (j = 0; j <= n - 1; j++)
             {
-                p += 1 / (x - i + x * j);
+                p += 1 / (x - i + x * j) +777;
             }
             y = y + p;
             
